@@ -1,3 +1,4 @@
+import ArticleList from "./components/ArticleList/ArticleList";
 import List from "./components/List/List";
 
 
@@ -28,6 +29,16 @@ function App() {
     </li>
   ));
 
+
+
+
+  const articles = [
+    {title: "This is an example article", url: "#", teaser: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, maxime! Labore, quasi eveniet, accusamus expedita commodi ducimus exercitationem sapiente ullam velit minus rem, magni explicabo et voluptas! Similique, ea nemo.",},
+    {title: "Another an example as article", url: "#", teaser: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, maxime! Labore, quasi eveniet, accusamus expedita commodi ducimus exercitationem sapiente ullam velit minus rem, magni explicabo et voluptas! Similique, ea nemo.",},
+    {title: "Last article an example", url: "#", teaser: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, maxime! Labore, quasi eveniet, accusamus expedita commodi ducimus exercitationem sapiente ullam velit minus rem, magni explicabo et voluptas! Similique, ea nemo.",},
+  ];
+
+
   return (
     <div className="App">
       <h2>
@@ -49,6 +60,10 @@ function App() {
 
 
       <List src={vegies}/>
+
+
+
+      <ArticleList src={articles}/>
 
     </div>
   );
