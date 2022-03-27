@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import List from "./components/List/List";
+
 
 function App() {
+
+  const vegies = ["Carrot", "Potato", "Strawberry",];
+
+
+  const fruits = ["Apple", "Pear", "PineApple",];
+
+  const fruitList = fruits.map((fruit) => {
+    return (
+      <li>{fruit}!</li>
+    );
+  });
+
+
+  const cartoons = [
+    {name: "Naruto", strength: "clones",},
+    {name: "Balto", strength: "Confidence",},
+    {name: "Benten", strength: "his clock",},
+  ];
+
+
+  const cartoonListes = cartoons.map((cartoon) => (
+    <li>
+      {cartoon.name}: {cartoon.strength}
+    </li>
+  ));
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>
+        hello world!
+      </h2>
+
+      <div>
+        {vegies}
+      </div>
+
+
+      <ol>
+        {fruitList}
+      </ol>
+
+      <ol>
+        {cartoonListes}
+      </ol>
+
+
+      <List src={vegies}/>
+
     </div>
   );
 }
