@@ -1,0 +1,11 @@
+.ProgressRedBar {
+  background-color: rgb(170, 243, 243);
+  border-radius: .2rem;
+  margin: .5rem;
+  overflow: hidden;
+}
+
+.ProgressRedBar div {
+  padding: .5rem;
+  background-color: rgb(247, 44, 44);
+}
